@@ -3,17 +3,6 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 
-API_HASH=28f69bdb8515b51bffcf114c5e2e3b1b
-APP_ID=
-TG_BOT_TOKEN=8297292617:AAEn4SBAKE6T4qLhQELwObvqOFaRl_k5CJQ
-OWNER_ID=7923687051
-CHANNEL_ID=-1003280186223 
-DATABASE_URL=mongodb+srv://vvbots7_db_user:t1EPdJhgaJHebskP@cluster0.srghq87.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-ADMINS=7923687051
-FORCE_SUB_CHANNEL=-1002358905932
-FORCE_SUB_CHANNEL1=-1002307779521
-PROTECT_CONTENT=False
-AUTO_DELETE_TIME=600
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "8297292617:AAEn4SBAKE6T4qLhQELwObvqOFaRl_k5CJQ")
 API_ID = int(os.environ.get("API_ID", "27852736"))
