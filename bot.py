@@ -1,6 +1,7 @@
+from aiohttp import web
 from plugins import web_server
 import pyromod.listen
-from pyrogram import Client, idle  # ✅ ADDED: idle import
+from pyrogram import Client
 from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
@@ -8,7 +9,6 @@ from config import API_HASH, API_ID, LOGGER, BOT_TOKEN, TG_BOT_WORKERS, FORCE_SU
 import pyrogram.utils
 
 pyrogram.utils.MIN_CHANNEL_ID = -1009999999999
-
 
 async def ping():
     url = "https://tf-file-store-bot-sk8v.onrender.com"
@@ -120,8 +120,6 @@ class Bot(Client):
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, PORT).start()
         asyncio.create_task(ping())
-        # ✅ ADDED: This line keeps the bot running forever
-        await idle()
 
     async def stop(self, *args):
         await super().stop()
@@ -131,3 +129,8 @@ class Bot(Client):
 
 
 
+
+# Tech freak 
+# Don't Remove Credit!!!
+# Telegram Channel @Tech_freak_tamil
+# Developer @devilo7
