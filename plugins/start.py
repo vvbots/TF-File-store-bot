@@ -99,8 +99,8 @@ async def start_command(client: Client, message: Message):
         return
     else:
         reply_markup = InlineKeyboardMarkup([[
-            InlineKeyboardButton("⚔️Update Channel", url="https://t.me/tech_freak_tamil"),
-            InlineKeyboardButton("🛡️Support Group", url="https://t.me/+NITVxLchQhYzNGZl")
+            InlineKeyboardButton("⚔️Update Channel", url="https://t.me/VV_Moviez"),
+            InlineKeyboardButton("🛡️Support Group", url="https://t.me/+Tuhbk10gUwMwZTc1")
             ],[
             InlineKeyboardButton("📢Help", callback_data="help"),
             InlineKeyboardButton("⚡About", callback_data="about")
