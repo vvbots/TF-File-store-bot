@@ -11,7 +11,7 @@ import asyncio
 import aiohttp 
 pyrogram.utils.MIN_CHANNEL_ID = -1009999999999
 
-PORT = 8050
+PORT = 8080
 
 async def ping():
     url = "https://tf-file-store-bot-sk8v.onrender.com"
