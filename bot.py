@@ -1,7 +1,6 @@
-from aiohttp import web
 from plugins import web_server
 import pyromod.listen
-from pyrogram import Client
+from pyrogram import Client, idle  # ✅ ADDED: idle import
 from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
@@ -104,6 +103,9 @@ class Bot(Client):
         await app.setup()
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, PORT).start()
+        
+        # ✅ ADDED: This line keeps the bot running forever
+        await idle()
 
     async def stop(self, *args):
         await super().stop()
@@ -113,8 +115,3 @@ class Bot(Client):
 
 
 
-
-# Tech freak 
-# Don't Remove Credit!!!
-# Telegram Channel @Tech_freak_tamil
-# Developer @devilo7
