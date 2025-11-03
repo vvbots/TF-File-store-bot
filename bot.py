@@ -7,7 +7,8 @@ import sys
 from datetime import datetime
 from config import API_HASH, API_ID, LOGGER, BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL_1, FORCE_SUB_CHANNEL_2, FORCE_SUB_CHANNEL_3, FORCE_SUB_CHANNEL_4, CHANNEL_ID, PORT
 import pyrogram.utils
-
+import asyncio 
+import aiohttp 
 pyrogram.utils.MIN_CHANNEL_ID = -1009999999999
 
 async def ping():
