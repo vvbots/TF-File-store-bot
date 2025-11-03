@@ -9,12 +9,12 @@ API_ID = int(os.environ.get("API_ID", "27852736"))
 API_HASH = os.environ.get("API_HASH", "28f69bdb8515b51bffcf114c5e2e3b1b")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", "6299192020"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7923687051"))
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://vvbots7_db_user:t1EPdJhgaJHebskP@cluster0.srghq87.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "vv")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003094784223"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002264181978"))
 
 FORCE_SUB_CHANNEL_1 = int(os.environ.get("FORCE_SUB_CHANNEL_1", "-1002358905932"))
 
@@ -36,8 +36,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 try:
-    ADMINS=[6299192020 ,6016699737, 5000956033]
-    for x in (os.environ.get("ADMINS", "6299192020").split()):
+    ADMINS=[7923687051]
+    for x in (os.environ.get("ADMINS", "7923687051").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -66,7 +66,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
 USER_REPLY_TEXT = "❌Sry You can't Able to Message me !\n\n» My Owner 👉 "
 
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hi {first} Friend I am a Advance File Store bot 😈 \n\n I was created by 👉@Tech_freak_tamil </b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hi {first} Friend I am a Advance File Store bot 😈 \n\n I was created by 👉@VVFilter_bot </b>")
 
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "𝐒𝐨𝐫𝐫𝐲 {first} You must join the given channels ..\n\n 𝐒𝐨 please join and  “𝐍𝐨𝐰 𝐂𝐥𝐢𝐜𝐤 𝐡𝐞𝐫𝐞” 𝐛𝐮𝐭𝐭𝐨𝐧....!")
 
@@ -74,7 +74,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "𝐒𝐨𝐫𝐫𝐲 {first} Yo
 
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6299192020)
+ADMINS.append(7923687051)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
