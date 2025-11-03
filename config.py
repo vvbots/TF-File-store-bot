@@ -3,23 +3,33 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 
+API_HASH=28f69bdb8515b51bffcf114c5e2e3b1b
+APP_ID=
+TG_BOT_TOKEN=8297292617:AAEn4SBAKE6T4qLhQELwObvqOFaRl_k5CJQ
+OWNER_ID=7923687051
+CHANNEL_ID=-1003280186223 
+DATABASE_URL=mongodb+srv://vvbots7_db_user:t1EPdJhgaJHebskP@cluster0.srghq87.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+ADMINS=7923687051
+FORCE_SUB_CHANNEL=-1002358905932
+FORCE_SUB_CHANNEL1=-1002307779521
+PROTECT_CONTENT=False
+AUTO_DELETE_TIME=600
 
-
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-API_ID = int(os.environ.get("API_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8297292617:AAEn4SBAKE6T4qLhQELwObvqOFaRl_k5CJQ")
+API_ID = int(os.environ.get("API_ID", "27852736"))
+API_HASH = os.environ.get("API_HASH", "28f69bdb8515b51bffcf114c5e2e3b1b")
 
 
 OWNER_ID = int(os.environ.get("OWNER_ID", "6299192020"))
-DB_URL = os.environ.get("DB_URL", "")
-DB_NAME = os.environ.get("DB_NAME", "Tecfreaktamil")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://vvbots7_db_user:t1EPdJhgaJHebskP@cluster0.srghq87.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DB_NAME", "vv")
 
 
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003094784222"))
 
-FORCE_SUB_CHANNEL_1 = int(os.environ.get("FORCE_SUB_CHANNEL_1", "-1003056865925"))
+FORCE_SUB_CHANNEL_1 = int(os.environ.get("FORCE_SUB_CHANNEL_1", "-1002358905932"))
 
-FORCE_SUB_CHANNEL_2 = int(os.environ.get("FORCE_SUB_CHANNEL_2", "0"))
+FORCE_SUB_CHANNEL_2 = int(os.environ.get("FORCE_SUB_CHANNEL_2", "-1002307779521"))
 
 FORCE_SUB_CHANNEL_3 = int(os.environ.get("FORCE_SUB_CHANNEL_3", "0"))
 
