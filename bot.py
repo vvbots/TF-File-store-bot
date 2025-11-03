@@ -10,6 +10,22 @@ import pyrogram.utils
 pyrogram.utils.MIN_CHANNEL_ID = -1009999999999
 
 
+async def ping():
+    url = "https://tf-file-store-bot-sk8v.onrender.com"
+    retry_delay = 300  # Start with 5 minutes
+    max_delay = 900  # Max 15 minutes
+    
+    while True:
+        try:
+            async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=30)) as session:
+                async with session.get(url) as resp:
+                    print(f"✓ Ping successful: {resp.status}")
+                    retry_delay = 300  # Reset delay on success
+        except Exception as e:
+            print(f"⚠ Ping error: {e}")
+            retry_delay = min(retry_delay * 1.5, max_delay)  # Exponential backoff
+        
+        await asyncio.sleep(retry_delay)
 
 class Bot(Client):
     def __init__(self):
@@ -103,7 +119,7 @@ class Bot(Client):
         await app.setup()
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, PORT).start()
-        
+        asyncio.create_task(ping())
         # ✅ ADDED: This line keeps the bot running forever
         await idle()
 
